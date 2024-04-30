@@ -8,29 +8,31 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="app-container">
-      <div className="left-section">
-        <div className="logo-container">
-          <img src={token_logo} className="logo" alt="Token Logo" />
-          <p className="logo-text">SOULANA</p>
+    <div style={{ display: "flex", alignItems: "center",height:"88%" }}>
+            <div style={{flex: "3",height:"100%"}}>
+            <div style={{ background: "#182a34", borderRadius: "0 25px 25px 0" , boxShadow: "0px 8px 20px rgba(149, 235, 174, 1), 0px -8px 20px rgba(149, 235, 174, 1)" }}>
+                <div style={{ width: "90%", margin: "auto", display: "flex", flexDirection: "column" }}>
+                    <div style={{ display: "flex", flexDirection: 'row' }}>
+                        <p style={{ color: "#5cc884", fontSize: "5rem" }}>SOULANA </p>
+                        <img src={token_logo} style={{ height: "80px", margin: "auto", marginLeft: "0px" }} alt="" />
+                    </div>
+                    <div style={{ marginTop: "-120px" }}>
+                        <p style={{ color: "#6bb98b", fontSize: "2rem" }}>Incentivised Memecoin Trading Experience</p>
+                    </div>
+                    <div style={{ marginTop: "-40px" }}>
+                        <p style={{ color: "#b3eaaf", fontSize: "4rem" }}>To Be Announced...</p>
+                    </div>
+                    <div style={{ marginTop: "20px", paddingBottom: "60px", display: "flex" }}>
+                        <Button className="button_intro" style={{ background: "#213840", paddingTop: "20px", paddingBottom: "20px", width: "25%" ,fontSize:"1.2rem" ,borderRadius:"20px",textTransform: "none"}}>Contact Us</Button>
+                        <Button className="button_intro" style={{ background: "#213840", paddingTop: "20px", paddingBottom: "20px", width: "25%", marginLeft: "30%",fontSize:"1.2rem",borderRadius:"20px",textTransform: "none" }}>Docs</Button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div style={{flex:'2', overflow: 'hidden',marginTop:"220px"}}>
+                <img src={mascot} style={{ height: "850px",marginLeft:"21%"}} alt="" />
+            </div>
         </div>
-        <div className="description">
-          <p className="description-text">Incentivised Memecoin Trading Experience</p>
-          <p className="announcement-text">To Be Announced...</p>
-        </div>
-        <div className="buttons-container">
-          <Button className="button_intro" variant="contained" onClick={() => setCount((count) => count + 1)}>
-            Count is {count}
-          </Button>
-          <Button className="button_intro" variant="contained">
-            Docs
-          </Button>
-        </div>
-      </div>
-      <div className="right-section">
-        <img src={mascot} className="mascot" alt="Mascot" />
-      </div>
-    </div>
   );
 }
 
