@@ -4,7 +4,7 @@ import token_logo from './assets/token_logo.gif';
 import mascot from './assets/correct_mascot.png';
 import './App.css';
 function App() {
-    const [count, setCount] = useState(0);
+    const [] = useState(0);
 
     return (
         <div style={{ height: "88%" }}>
