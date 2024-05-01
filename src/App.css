@@ -21,3 +21,17 @@ body,html{
 #root{
  width:100%;
 }
+.pic{
+  z-index: 1;
+}
+.main{
+  z-index: 0;
+}
+@media (max-width: 1238px) {
+  .main {
+    z-index: 1;
+  }
+  .pic {
+    z-index: 0;
+  }
+}
