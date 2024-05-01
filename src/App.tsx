@@ -35,7 +35,7 @@ function App() {
             </div>
 
             <div style={{position:"absolute",bottom:"0",right:"0"}}>
-            <img className='pic' src={mascot} style={{ height: "30%",maxWidth:"20vw"}} alt="" />
+            <img className='pic' src={mascot} style={{ height: "20%",maxWidth:"30vw"}} alt="" />
 
             </div>
         </div>
