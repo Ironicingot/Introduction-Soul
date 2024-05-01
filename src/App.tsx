@@ -8,7 +8,7 @@ function App() {
 
     return (
         <div style={{ height: "88%" }}>
-            <div className="main"style={{ display: "flex", alignItems: "center",position:"relative" }}>
+            <div className="main"style={{ display: "flex", alignItems: "center",position:"relative",fontFamily: "consolas",}}>
                 <div style={{ flex: "3", height: "100%" }}>
                     <div style={{ background: "#182a34", borderRadius: "0 25px 25px 0", boxShadow: "0px 8px 20px rgba(149, 235, 174, 1), 0px -8px 20px rgba(149, 235, 174, 1)" }}>
                         <div style={{ width: "90%", margin: "auto", display: "flex", flexDirection: "column" }}>
