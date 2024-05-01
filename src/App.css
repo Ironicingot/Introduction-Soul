@@ -56,9 +56,6 @@
   .main div {
     font-size: 3.5vw; /* Increase text size for readability */
   }
-  .main {
-    flex-direction: column; /* Stack elements vertically on small screens */
-  }
 }
 
 /* Specific adjustments for very small screens */
@@ -67,6 +64,6 @@
     padding: 10px; /* Add padding for very small screens */
   }
   .pic {
-    width: 50vw; /* Adjust image sizes */
+    width: 30vw; /* Adjust image sizes */
   }
 }
