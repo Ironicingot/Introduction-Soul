@@ -23,8 +23,8 @@ function App() {
                                 <p style={{ color: "#b3eaaf", fontSize: "4vw" }}>To Be Announced...</p>
                             </div>
                             <div style={{ marginTop: "20px", paddingBottom: "60px", display: "flex" }}>
-                                <Button className="button_intro" style={{ background: "#213840", paddingTop: "1vw", paddingBottom: "1vw", width: "25%", fontSize: "1vw", borderRadius: "20px", textTransform: "none" }}>Contact Us</Button>
-                                <Button className="button_intro" style={{ background: "#213840", paddingTop: "1vw", paddingBottom: "1vw", width: "25%", marginLeft: "30%", fontSize: "1vw", borderRadius: "20px", textTransform: "none" }}>Docs</Button>
+                                <Button className="button_intro" style={{ background: "#213840", paddingTop: "1vw", paddingBottom: "1vw", width: "25%", fontSize: "1vw", borderRadius: "20px", textTransform: "none",fontFamily:"consolas", }}>Contact Us</Button>
+                                <Button className="button_intro" style={{ background: "#213840", paddingTop: "1vw", paddingBottom: "1vw", width: "25%", marginLeft: "30%", fontSize: "1vw", borderRadius: "20px", textTransform: "none",fontFamily: "consolas", }}>Docs</Button>
                             </div>
                         </div>
                     </div>
