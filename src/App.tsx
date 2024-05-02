@@ -54,7 +54,7 @@ function MobileComponent() {
     return (
         <div>
             <div style={{ display: "flex", flexDirection: "column",marginTop:"-40vw" }}>
-                <div style={{ background: "#182a34", borderRadius: "0 25px 25px 0", boxShadow: "0px 8px 20px rgba(149, 235, 174, 1), 0px -8px 20px rgba(149, 235, 174, 1)" }}>
+                <div style={{ background: "#182a34", borderRadius: "25px 25px 25px 25px", boxShadow: "0px 8px 20px rgba(149, 235, 174, 1), 0px -8px 20px rgba(149, 235, 174, 1)",width:"90%",margin:"auto" }}>
                     <div style={{ width: "90%", margin: "auto", display: "flex", flexDirection: "column" }}>
                         <div style={{ display: "flex", flexDirection: 'row' }}>
                             <p style={{ color: "#5cc884", fontSize: "3rem" }}>SOULANA </p>
@@ -66,13 +66,13 @@ function MobileComponent() {
                         <div style={{ marginTop: "-2rem" }}>
                             <p style={{ color: "#b3eaaf", fontSize: "2rem" }}>To Be Announced...</p>
                         </div>
-                        <div style={{ marginTop: "1rem", paddingBottom: "60px", display: "flex" }}>
+                        <div style={{ marginTop: "0.2rem", paddingBottom: "4rem", display: "flex" }}>
                             <Button className="button_intro" style={{ background: "#213840", paddingTop: "1rem", paddingBottom: "1rem", width: "25%", fontSize: "0.7rem", borderRadius: "20px", textTransform: "none" }}>Contact Us</Button>
                             <Button className="button_intro" style={{ background: "#213840", paddingTop: "1rem", paddingBottom: "1rem", width: "25%", marginLeft: "30%", fontSize: "0.7rem", borderRadius: "20px", textTransform: "none" }}>Docs</Button>
                         </div>
                     </div>
                 </div>
-                <div style={{ position:"absolute",bottom:"0" }}>
+                <div style={{ position:"absolute",bottom:"0" ,margin:"auto"}}>
                     <img  src={mobileMascot} style={{ height: "80%", width: "90%" }} alt="" />
 
                 </div>
