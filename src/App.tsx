@@ -67,15 +67,15 @@ function MobileComponent() {
                             <p style={{ color: "#b3eaaf", fontSize: "2rem" }}>To Be Announced...</p>
                         </div>
                         <div style={{ marginTop: "0.2rem", paddingBottom: "4rem", display: "flex" }}>
-                            <Button className="button_intro" style={{ background: "#213840", paddingTop: "1rem", paddingBottom: "1rem", width: "25%", fontSize: "0.7rem", borderRadius: "20px", textTransform: "none" }}>Contact Us</Button>
+                            <Button className="button_intro" style={{ background: "#213840", paddingTop: "1rem", paddingBottom: "1rem", width: "35%", fontSize: "0.7rem", borderRadius: "20px", textTransform: "none" }}>Contact Us</Button>
                             <Button className="button_intro" style={{ background: "#213840", paddingTop: "1rem", paddingBottom: "1rem", width: "25%", marginLeft: "30%", fontSize: "0.7rem", borderRadius: "20px", textTransform: "none" }}>Docs</Button>
                         </div>
                     </div>
                 </div>
-                <div style={{ position:"absolute",bottom:"0" ,margin:"auto"}}>
-                    <img  src={mobileMascot} style={{ height: "80%", width: "90%" }} alt="" />
+                <div style={{ position: "absolute", bottom: "0", left: "50%", transform: "translateX(-50%)", width: "100%", textAlign: "center" }}>
+    <img src={mobileMascot} style={{ maxWidth: "80%", maxHeight: "80%", height: "auto", width: "auto" }} alt="" />
+</div>
 
-                </div>
             </div>
         </div>
     )
