@@ -7,12 +7,31 @@ import mobileMascot from "./assets/mobileMascot.png"
 import './App.css';
 function App() {
     const [] = useState(0);
-    const orientation = useOrientation();
+    const [width, setWidth] = useState(window.innerWidth);
 
+    const orientation = useOrientation();
+    useEffect(() => {
+        const handleResize = () => {
+            setWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return (
         <>
-            {orientation.startsWith('portrait') ? <MobileComponent /> : <Desktop />}
-        </>
+ <>
+            {orientation.startsWith('portrait') ? (
+                <MobileComponent />
+            ) : width <= 900 ? (
+                <MobileComponent />
+            ) : (
+                <Desktop />
+            )}
+        </>        </>
 
     );
 }
@@ -45,7 +64,7 @@ function Desktop() {
         </div>
 
         <div style={{ position: "absolute", bottom: "0", right: "0" }}>
-            <img className='pic' src={mascot} style={{ height: "30%", maxWidth: "20vw" }} alt="" />
+            <img className='pic' src={mascot} style={{ height: "30%", maxWidth: "40vw" }} alt="" />
 
         </div>
     </div>)
@@ -73,7 +92,7 @@ function MobileComponent() {
                     </div>
                 </div>
                 <div style={{ position: "absolute", bottom: "0", left: "50%", transform: "translateX(-50%)", width: "100%", textAlign: "center" }}>
-    <img src={mobileMascot} style={{ maxWidth: "80%", maxHeight: "80%", height: "auto", width: "auto" }} alt="" />
+    <img src={mobileMascot} style={{ maxWidth: "60%", maxHeight: "60%", height: "auto", width: "auto" }} alt="" />
 </div>
 
             </div>
