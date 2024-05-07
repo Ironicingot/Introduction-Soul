@@ -94,8 +94,8 @@ function MobileComponent() {
                             <p style={{ color: "#b3eaaf", fontSize: "2rem" }}>To Be Announced...</p>
                         </div>
                         <div style={{ marginTop: "0.2rem", paddingBottom: "4rem", display: "flex" }}>
-                            <Button className="button_intro" style={{ background: "#213840", paddingTop: "1rem", paddingBottom: "1rem", width: "35%", fontSize: "0.7rem", borderRadius: "20px", textTransform: "none" }}>Contact Us</Button>
-                            <Button className="button_intro" style={{ background: "#213840", paddingTop: "1rem", paddingBottom: "1rem", width: "25%", marginLeft: "30%", fontSize: "0.7rem", borderRadius: "20px", textTransform: "none" }}>Docs</Button>
+                            <Button className="button_intro" style={{ background: "#213840", paddingTop: "1rem", paddingBottom: "1rem", width: "35%", fontSize: "0.7rem", borderRadius: "20px", textTransform: "none" }}><a href="https://t.me/SoulanaOfficial">Contact Us</a></Button>
+                            <Button className="button_intro" style={{ background: "#213840", paddingTop: "1rem", paddingBottom: "1rem", width: "25%", marginLeft: "30%", fontSize: "0.7rem", borderRadius: "20px", textTransform: "none" }}><a href="https://soul-3.gitbook.io/soulana-documentation/">Docs</a></Button>
                         </div>
                     </div>
                 </div>
