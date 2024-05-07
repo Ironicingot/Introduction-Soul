@@ -8,11 +8,13 @@ import './App.css';
 function App() {
     const [] = useState(0);
     const [width, setWidth] = useState(window.innerWidth);
+    const [height, setHeight] = useState(window.innerHeight);
 
     const orientation = useOrientation();
     useEffect(() => {
         const handleResize = () => {
             setWidth(window.innerWidth);
+            setHeight(window.innerHeight);
         };
 
         window.addEventListener('resize', handleResize);
@@ -23,15 +25,21 @@ function App() {
     }, []);
     return (
         <>
- <>
-            {orientation.startsWith('portrait') ? (
-                <MobileComponent />
+    {orientation.startsWith('portrait') ? (
+        <MobileComponent />
+    ) : (
+        <>
+            {orientation.startsWith('landscape') && height <= 596 ? (
+                <Desktop />
             ) : width <= 900 ? (
                 <MobileComponent />
             ) : (
                 <Desktop />
             )}
-        </>        </>
+        </>
+    )}
+</>
+
 
     );
 }
@@ -64,7 +72,7 @@ function Desktop() {
         </div>
 
         <div style={{ position: "absolute", bottom: "0", right: "0" }}>
-            <img className='pic' src={mascot} style={{ height: "30%", maxWidth: "33vw" }} alt="" />
+            <img className='pic' src={mascot} id="mascotImg" style={{ height: "30%", maxWidth: "33vw" }} alt="" />
 
         </div>
     </div>)
@@ -72,8 +80,8 @@ function Desktop() {
 function MobileComponent() {
     return (
         <div>
-            <div style={{ display: "flex", flexDirection: "column",marginTop:"-40vw" }}>
-                <div style={{ background: "#182a34", borderRadius: "25px 25px 25px 25px", boxShadow: "0px 8px 20px rgba(149, 235, 174, 1), 0px -8px 20px rgba(149, 235, 174, 1)",width:"90%",margin:"auto" }}>
+            <div style={{ display: "flex", flexDirection: "column", marginTop: "-40vw" }}>
+                <div style={{ background: "#182a34", borderRadius: "25px 25px 25px 25px", boxShadow: "0px 8px 20px rgba(149, 235, 174, 1), 0px -8px 20px rgba(149, 235, 174, 1)", width: "90%", margin: "auto" }}>
                     <div style={{ width: "90%", margin: "auto", display: "flex", flexDirection: "column" }}>
                         <div style={{ display: "flex", flexDirection: 'row' }}>
                             <p style={{ color: "#5cc884", fontSize: "3rem" }}>SOULANA </p>
@@ -92,8 +100,8 @@ function MobileComponent() {
                     </div>
                 </div>
                 <div style={{ position: "absolute", bottom: "0", left: "50%", transform: "translateX(-50%)", width: "100%", textAlign: "center" }}>
-    <img src={mobileMascot} style={{ maxWidth: "55%", maxHeight: "55%", height: "auto", width: "auto" }} alt="" />
-</div>
+                    <img src={mobileMascot} id="mascotImg" className='pic' style={{ maxWidth: "55%", maxHeight: "55%", height: "auto", width: "auto" }} alt="" />
+                </div>
 
             </div>
         </div>

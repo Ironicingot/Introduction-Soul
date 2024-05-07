@@ -39,3 +39,9 @@ body,html{
     z-index: 0;
   }
 }
+@media  (orientation: landscape) and (height: 596px) {
+  .pic{
+    max-width: 22vw;
+    max-height: 40%;
+  }
+}
