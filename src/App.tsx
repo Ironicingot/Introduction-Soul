@@ -52,8 +52,8 @@ function Desktop() {
                             <p style={{ color: "#b3eaaf", fontSize: "3vw" }}>To Be Announced...</p>
                         </div>
                         <div style={{ marginTop: "20px", paddingBottom: "60px", display: "flex" }}>
-                            <Button className="button_intro" style={{ background: "#213840", paddingTop: "1vw", paddingBottom: "1vw", width: "25%", fontSize: "1vw", borderRadius: "20px", textTransform: "none" }}>Contact Us</Button>
-                            <Button className="button_intro" style={{ background: "#213840", paddingTop: "1vw", paddingBottom: "1vw", width: "25%", marginLeft: "30%", fontSize: "1vw", borderRadius: "20px", textTransform: "none" }}>Docs</Button>
+                            <Button className="button_intro" style={{ background: "#213840", paddingTop: "1vw", paddingBottom: "1vw", width: "25%", fontSize: "1vw", borderRadius: "20px", textTransform: "none" }}><a href="https://t.me/SoulanaOfficial">Contact Us</a></Button>
+                            <Button className="button_intro" style={{ background: "#213840", paddingTop: "1vw", paddingBottom: "1vw", width: "25%", marginLeft: "30%", fontSize: "1vw", borderRadius: "20px", textTransform: "none" }}><a href="https://soul-3.gitbook.io/soulana-documentation/">Docs</a></Button>
                         </div>
                     </div>
                 </div>
