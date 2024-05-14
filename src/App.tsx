@@ -51,7 +51,7 @@ function Desktop() {
                 <div style={{ background: "#182a34", borderRadius: "0 25px 25px 0", boxShadow: "0px 8px 20px rgba(149, 235, 174, 1), 0px -8px 20px rgba(149, 235, 174, 1)" }}>
                     <div style={{ width: "90%", margin: "auto", display: "flex", flexDirection: "column" }}>
                         <div style={{textAlign:"center",paddingTop:"5rem"}}>
-                            <img src={brand} style={{height:"30vw",textAlign:"center"}} alt="" />
+                            <img src={brand} style={{height:"20vw",textAlign:"center"}} alt="" />
                         </div>
                         <div style={{ marginTop: "20px", paddingBottom: "60px", display: "flex" }}>
                             <Button className="button_intro" style={{ background: "#213840", paddingTop: "1vw", paddingBottom: "1vw", width: "25%",marginLeft: "10%", fontSize: "1vw", borderRadius: "20px", textTransform: "none" }}><a href="https://t.me/SoulanaOfficial">Contact Us</a></Button>
