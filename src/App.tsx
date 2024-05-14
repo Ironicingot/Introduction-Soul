@@ -52,6 +52,9 @@ function Desktop() {
                         <div style={{textAlign:"center",paddingTop:"5rem"}}>
                             <img src={brand} style={{height:"20vw",textAlign:"center"}} alt="" />
                         </div>
+                        <div style={{ marginTop: "-2rem",textAlign:"center" }}>
+                            <p style={{ color: "#b3eaaf", fontSize: "2rem" }}>To Be Announced...</p>
+                        </div>
                         <div style={{ marginTop: "20px", paddingBottom: "60px", display: "flex" }}>
                             <Button className="button_intro" style={{ background: "#213840", paddingTop: "1vw", paddingBottom: "1vw", width: "25%",marginLeft: "10%", fontSize: "1vw", borderRadius: "20px", textTransform: "none" }}><a href="https://t.me/SoulanaOfficial">Contact Us</a></Button>
                             <Button className="button_intro" style={{ background: "#213840", paddingTop: "1vw", paddingBottom: "1vw", width: "25%", marginLeft: "30%", fontSize: "1vw", borderRadius: "20px", textTransform: "none" }}><a href="https://soul-3.gitbook.io/soulana-documentation/">Docs</a></Button>
@@ -78,6 +81,9 @@ function MobileComponent() {
                     <div style={{ width: "90%", margin: "auto", display: "flex", flexDirection: "column" }}>
                     <div style={{textAlign:"center",paddingTop:"2rem"}}>
                             <img src={brand} style={{height:"50vw",textAlign:"center"}} alt="" className='company-name'/>
+                        </div>
+                        <div style={{ marginTop: "-2rem",textAlign:"center" }}>
+                            <p style={{ color: "#b3eaaf", fontSize: "6vw" }}>To Be Announced...</p>
                         </div>
                         <div style={{ marginTop: "0.2rem", paddingBottom: "4rem", display: "flex" }}>
                             <Button className="button_intro" style={{ background: "#213840", paddingTop: "1rem", paddingBottom: "1rem", width: "35%", fontSize: "0.7rem", borderRadius: "20px", textTransform: "none" }}><a href="https://t.me/SoulanaOfficial">Contact Us</a></Button>
