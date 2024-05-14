@@ -27,9 +27,11 @@ body,html{
 }
 .pic{
   z-index: 1;
+
 }
 .main{
   z-index: 0;
+
 }
 @media (max-width: 1238px) {
   .main {
@@ -44,4 +46,10 @@ body,html{
     max-width: 22vw;
     max-height: 40%;
   }
+}
+@media (max-width:859px){
+  .company-name{
+    height:30vw !important
+  }
+
 }

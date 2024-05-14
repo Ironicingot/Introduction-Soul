@@ -4,6 +4,7 @@ import token_logo from './assets/token_logo.gif';
 import mascot from './assets/correct_mascot.png';
 import { useEffect } from 'react';
 import mobileMascot from "./assets/mobileMascot.png"
+import brand from "./assets/Company brand.png"
 import './App.css';
 function App() {
     const [] = useState(0);
@@ -49,18 +50,11 @@ function Desktop() {
             <div style={{ flex: "3", height: "100%" }}>
                 <div style={{ background: "#182a34", borderRadius: "0 25px 25px 0", boxShadow: "0px 8px 20px rgba(149, 235, 174, 1), 0px -8px 20px rgba(149, 235, 174, 1)" }}>
                     <div style={{ width: "90%", margin: "auto", display: "flex", flexDirection: "column" }}>
-                        <div style={{ display: "flex", flexDirection: 'row' }}>
-                            <p style={{ color: "#5cc884", fontSize: "4vw" }}>SOULANA </p>
-                            <img src={token_logo} style={{ height: "auto", maxWidth: "12%", margin: "auto", marginLeft: "0px" }} alt="" />
-                        </div>
-                        <div style={{ marginTop: "-6vw" }}>
-                            <p style={{ color: "#6bb98b", fontSize: "1.6vw" }}>Incentivised Memecoin Trading Experience</p>
-                        </div>
-                        <div style={{ marginTop: "-4vw" }}>
-                            <p style={{ color: "#b3eaaf", fontSize: "3vw" }}>To Be Announced...</p>
+                        <div style={{textAlign:"center",paddingTop:"5rem"}}>
+                            <img src={brand} style={{height:"30vw",textAlign:"center"}} alt="" />
                         </div>
                         <div style={{ marginTop: "20px", paddingBottom: "60px", display: "flex" }}>
-                            <Button className="button_intro" style={{ background: "#213840", paddingTop: "1vw", paddingBottom: "1vw", width: "25%", fontSize: "1vw", borderRadius: "20px", textTransform: "none" }}><a href="https://t.me/SoulanaOfficial">Contact Us</a></Button>
+                            <Button className="button_intro" style={{ background: "#213840", paddingTop: "1vw", paddingBottom: "1vw", width: "25%",marginLeft: "10%", fontSize: "1vw", borderRadius: "20px", textTransform: "none" }}><a href="https://t.me/SoulanaOfficial">Contact Us</a></Button>
                             <Button className="button_intro" style={{ background: "#213840", paddingTop: "1vw", paddingBottom: "1vw", width: "25%", marginLeft: "30%", fontSize: "1vw", borderRadius: "20px", textTransform: "none" }}><a href="https://soul-3.gitbook.io/soulana-documentation/">Docs</a></Button>
                         </div>
                     </div>
@@ -83,15 +77,8 @@ function MobileComponent() {
             <div style={{ display: "flex", flexDirection: "column", marginTop: "-40vw" }}>
                 <div style={{ background: "#182a34", borderRadius: "25px 25px 25px 25px", boxShadow: "0px 8px 20px rgba(149, 235, 174, 1), 0px -8px 20px rgba(149, 235, 174, 1)", width: "90%", margin: "auto" }}>
                     <div style={{ width: "90%", margin: "auto", display: "flex", flexDirection: "column" }}>
-                        <div style={{ display: "flex", flexDirection: 'row' }}>
-                            <p style={{ color: "#5cc884", fontSize: "3rem" }}>SOULANA </p>
-                            <img src={token_logo} style={{ height: "auto", maxWidth: "21%", margin: "auto", marginLeft: "0px" }} alt="" />
-                        </div>
-                        <div style={{ marginTop: "-4rem" }}>
-                            <p style={{ color: "#6bb98b", fontSize: "1rem" }}>Incentivised Memecoin Trading Experience</p>
-                        </div>
-                        <div style={{ marginTop: "-2rem" }}>
-                            <p style={{ color: "#b3eaaf", fontSize: "2rem" }}>To Be Announced...</p>
+                    <div style={{textAlign:"center",paddingTop:"2rem"}}>
+                            <img src={brand} style={{height:"50vw",textAlign:"center"}} alt="" className='company-name'/>
                         </div>
                         <div style={{ marginTop: "0.2rem", paddingBottom: "4rem", display: "flex" }}>
                             <Button className="button_intro" style={{ background: "#213840", paddingTop: "1rem", paddingBottom: "1rem", width: "35%", fontSize: "0.7rem", borderRadius: "20px", textTransform: "none" }}><a href="https://t.me/SoulanaOfficial">Contact Us</a></Button>
@@ -100,7 +87,7 @@ function MobileComponent() {
                     </div>
                 </div>
                 <div style={{ position: "absolute", bottom: "0", left: "50%", transform: "translateX(-50%)", width: "100%", textAlign: "center" }}>
-                    <img src={mobileMascot} id="mascotImg" className='pic' style={{ maxWidth: "55%", maxHeight: "55%", height: "auto", width: "auto" }} alt="" />
+                    <img src={mobileMascot} id="mascotImg" className='pic' style={{ maxWidth: "50%", maxHeight: "50%", height: "auto", width: "auto" }} alt="" />
                 </div>
 
             </div>
