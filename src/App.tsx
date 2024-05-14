@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Button } from '@mui/material';
-import token_logo from './assets/token_logo.gif';
 import mascot from './assets/correct_mascot.png';
 import { useEffect } from 'react';
 import mobileMascot from "./assets/mobileMascot.png"
