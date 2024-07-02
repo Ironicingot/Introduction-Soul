@@ -1,5 +1,5 @@
 import React from 'react';
-import './mint.css';
+import './Mint.css';
 
 const App: React.FC = () => {
   return (
