@@ -10,7 +10,7 @@ const Mint: React.FC = () => {
         <p className="soulana">SOULANA</p>
         <p className="rev-nfts">REV-NFTS</p>
         <p className="description">
-          Participate in the initial Bootstrap of the SOUL/SOL liquidity. Mint your NFTs and gain equity in all revenue streams earned within the protocol. Limited to 500 Pieces
+          Participate in the initial bootstrap of the SOUL/SOL liquidity. <div>Mint your NFTs and gain equity in all revenue streams</div> earned within the protocol. Limited to 500 Pieces
         </p>
         <div className="buttons">
           <button className="docs">Docs</button>

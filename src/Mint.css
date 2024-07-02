@@ -9,11 +9,11 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 0px;
 }
 
 .left-side, .right-side {
-  margin: 0 20px; /* Add margin to create space from the ends */
+  margin: 0 50px; /* Add margin to create space from the ends */
 }
 
 .left-side {
@@ -29,10 +29,10 @@ body {
 
 .rev-nfts {
   font-family: 'Consolas', monospace;
-  color: #68e494;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 6rem;
   line-height: 0;
+  background: linear-gradient(to right, #f638ea, #3eb356);
 }
 
 .description {
@@ -83,7 +83,7 @@ body {
     height: 100%;
     z-index: 1;
     opacity: 1;
-    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%);
 }
   
 
