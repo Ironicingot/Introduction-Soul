@@ -1,13 +1,14 @@
 import React from 'react';
 import './Mint.css';
 import mascot from './assets/nftmascot.png'; // Adjust the path if necessary
+import backdrop from './assets/Backdrop.png'; // Import the backdrop image
 
 const Mint: React.FC = () => {
   return (
     <div className="container">
       <div className="left-side">
-      <p className="soulana">SOULANA</p>
-        <p  className="rev-nfts">REV-NFTS</p>
+        <p className="soulana">SOULANA</p>
+        <p className="rev-nfts">REV-NFTS</p>
         <p className="description">
           Participate in the initial Bootstrap of the SOUL/SOL liquidity. Mint your NFTs and gain equity in all revenue streams earned within the protocol. Limited to 500 Pieces
         </p>
@@ -18,6 +19,7 @@ const Mint: React.FC = () => {
       </div>
       <div className="right-side">
         <div className="mint-section">
+          <img src={backdrop} alt="Backdrop" className="backdrop" />
           <img src={mascot} alt="NFT Mascot" className="mascot" />
           <div className="mint-details">
             <div className="mint-box">

@@ -1,177 +1,191 @@
 @import url('https://fonts.googleapis.com/css2?family=Noticia+Text:wght@400&display=swap');
 
 body {
-    background-color: #0d1b25;
-    color: #b3eaaf;
-    font-family: 'Source Code Pro', Consolas, monospace;
-  }
+  background-color: #0d1b25;
+  color: #b3eaaf;
+  font-family: 'Source Code Pro', Consolas, monospace;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.left-side, .right-side {
+  margin: 0 20px; /* Add margin to create space from the ends */
+}
+
+.left-side {
+  max-width: 50%;
+}
+
+.soulana {
+  font-family: 'Noticia Text';
+  color: #68e494;
+  font-size: 8rem;
+  line-height: 0;
+}
+
+.rev-nfts {
+  font-family: 'Consolas', monospace;
+  color: #68e494;
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 0;
+}
+
+.description {
+  font-family: 'Source Code Pro', Consolas, monospace;
+  color: #b3eaaf;
+  font-size: 1.2em;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.docs,
+.product-showcase {
+  font-family: 'Consolas', monospace;
+  color: #68e494;
+  border: 2px solid #68e494;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.right-side {
+  max-width: 40%;
+  text-align: center;
+}
+
+.mint-section {
+  background-color: #0b101b;
+  border-radius: 15px;
+  border: 2px solid;
+  border-image: linear-gradient(to right, #f638ea, #3eb356) .5;
+  padding: 20px;
+  margin-top: 20px;
+  position: relative;
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
   
-  .container {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .left-side, .right-side {
-    margin: 0 20px; /* Add margin to create space from the ends */
-  }
-  
-  .left-side {
-    max-width: 50%;
-  }
-  
-  .soulana {
-    font-family: 'Noticia Text';
-    color: #68e494;
-    font-size: 8rem;
-    line-height: 0;
-  }
-  
-  .rev-nfts {
-    font-family: 'Consolas', monospace;
-    color: #68e494;
-    font-weight: bold;
-    font-size: 5rem;
-    line-height: 0;
-  }
-  
-  .description {
-    font-family: 'Source Code Pro', Consolas, monospace;
-    color: #b3eaaf;
-    font-size: 1.2em;
-  }
-  
-  .buttons {
-    margin-top: 20px;
-  }
-  
-  .docs,
-  .product-showcase {
-    font-family: 'Consolas', monospace;
-    color: #68e494;
-    border: 2px solid #68e494;
-    border-radius: 10px;
-    padding: 10px 20px;
-    background: none;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  
-  .right-side {
-    max-width: 40%;
-    text-align: center;
-  }
-  
-  .mint-section {
-    background-color: #0b101b;
-    border-radius: 15px;
-    border: 3px solid;
-    border-image: linear-gradient(to right, #f638ea, #3eb356) 1;
-    padding: 20px;
-    margin-top: 20px;
-    position: relative;
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-  }
-  
-  .mascot {
-    max-width: 200px; /* Ensure the image does not exceed this width */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Space between mascot and mint details */
-  }
-  
-  .mint-details {
-    flex-grow: 1; /* Allow mint details to take remaining space */
-  }
-  
-  .mint-box, .counter-box, .total-box, .wallet-box {
-    margin-bottom: 20px;
-    border-radius: 10px;
-  }
-  
-  .mint-title {
-    font-family: 'Consolas', monospace;
-    font-weight: bold;
-    color: #b3eaaf;
-    font-size: 3rem;
-    margin-top: 0; /* Remove top margin */
-    margin-bottom:0;
-    text-align: center;
-    
-  }
-  
-  .mint-description {
-    font-family: 'Consolas', monospace;
-    color: #b3eaaf;
-    font-size: 0.8rem;
-    text-align: center;
-    margin-top: -10px;
-  }
-  
-  .counter-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-  }
-  
-  .counter-button {
-    font-family: 'Consolas', monospace;
-    color: #b3eaaf;
-    background: none;
-    border: 2px solid #b3eaaf;
-    border-radius: 10px;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .counter {
-    font-family: 'Consolas', monospace;
-    color: #b3eaaf;
-    font-size: 1.5em;
-    margin: 0 20px;
-  }
-  
-  .minted-status {
-    font-family: 'Consolas', monospace;
-    color: #b3eaaf;
-    font-size: .8rem;
-    text-align: left;
-  }
-  
-  .total-section {
-    margin-top: 20px;
-    text-align: center; /* Center the text */
-  }
-  
-  .total-title {
-    font-family: 'Consolas', monospace;
-    font-weight: bold;
-    color: #b3eaaf;
-    font-size: 1em;
-  }
-  
-  .total-value {
-    font-family: 'Consolas', monospace;
-    font-weight: bold;
-    color: #b3eaaf;
-    font-size: 2em;
-    margin-top: -25px;
-  }
-  
-  .connect-wallet {
-    font-family: 'Consolas', monospace;
-    color: #0d1b25;
-    background-color: #68e494;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 1000;
-  }
-  
+
+.mascot {
+  max-width: 200px; /* Ensure the image does not exceed this width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between mascot and mint details */
+  z-index: 2;
+  position: relative;
+}
+
+.mint-details {
+  flex-grow: 1; /* Allow mint details to take remaining space */
+  z-index: 2;
+  position: relative;
+}
+
+.mint-box, .counter-box, .total-box, .wallet-box {
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.mint-title {
+  font-family: 'Consolas', monospace;
+  font-weight: bold;
+  color: #b3eaaf;
+  font-size: 3rem;
+  margin-top: 0; /* Remove top margin */
+  margin-bottom:0;
+  text-align: center;
+}
+
+.mint-description {
+  font-family: 'Consolas', monospace;
+  color: #b3eaaf;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.counter-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.counter-button {
+  font-family: 'Consolas', monospace;
+  color: #b3eaaf;
+  background: none;
+  border: 2px solid #b3eaaf;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.counter {
+  font-family: 'Consolas', monospace;
+  color: #b3eaaf;
+  font-size: 1.5em;
+  margin: 0 20px;
+}
+
+.minted-status {
+  font-family: 'Consolas', monospace;
+  color: #b3eaaf;
+  font-size: .8rem;
+  text-align: left;
+}
+
+.total-section {
+  margin-top: 20px;
+  text-align: center; /* Center the text */
+}
+
+.total-title {
+  font-family: 'Consolas', monospace;
+  font-weight: bold;
+  color: #b3eaaf;
+  font-size: 1em;
+}
+
+.total-value {
+  font-family: 'Consolas', monospace;
+  font-weight: bold;
+  color: #b3eaaf;
+  font-size: 2em;
+  margin-top: -25px;
+}
+
+.connect-wallet {
+  font-family: 'Consolas', monospace;
+  color: #0d1b25;
+  background-color: #68e494;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 1000;
+}
