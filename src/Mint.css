@@ -20,7 +20,9 @@ body {
 .left-side {
   max-width: 50%;
 }
-
+.right-side{
+  margin-top: auto;
+}
 .soulana {
   font-family: 'Noticia Text';
   color: #68e494;
@@ -33,9 +35,13 @@ body {
   font-family: 'Consolas', monospace;
   font-weight: bold;
   font-size: 6rem;
-  line-height: 0;
+  line-height: 1;
   background: linear-gradient(to right, #f638ea, #3eb356);
   margin-top: px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: -3rem;
+  margin-bottom: 3rem;
 }
 
 .description {
