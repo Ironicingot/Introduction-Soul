@@ -38,7 +38,7 @@ body {
   margin-top: px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: -3rem;
+  margin-top: -5rem;
   margin-bottom: 3rem;
 }
 
@@ -81,7 +81,7 @@ body {
   align-items: center; /* Center items vertically */
   justify-content: center; /* Center items horizontally */
   overflow: hidden; /* Clip the child elements that go beyond this container */
-  top:15%
+  top:10%
 }
 
 .backdrop {
@@ -208,7 +208,7 @@ body {
   height: 1.4em;
   font-size: 3.5em;
   font-weight: 600;
-  color: #fff;
+  color: #b3eaaf;
   overflow: hidden;
   position: relative;
   display: inline-block;
