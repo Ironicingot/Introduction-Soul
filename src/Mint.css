@@ -72,16 +72,19 @@ body {
 .mint-section {
   position: relative;
   background-color: #0b101b;
-  border-radius: 15px;
-  border: 5px solid;
-  border-image: linear-gradient(to right, #f638ea, #3eb356) 1;
+  border-radius: 10px;
   padding: 20px;
   margin-top: 20px;
   display: flex; /* Use flexbox for layout */
   align-items: center; /* Center items vertically */
   justify-content: center; /* Center items horizontally */
   overflow: hidden; /* Clip the child elements that go beyond this container */
-  top:10%
+  top: 10%;
+
+  /* Border and border-image settings */
+  border: 5px solid; /* This sets the width of the border */
+  border-image: linear-gradient(to right, #f638ea, #3eb356) 1;
+  -webkit-mask-image: -webkit-radial-gradient(white, black); /* For WebKit browsers */
 }
 
 .backdrop {
