@@ -52,7 +52,7 @@ const Mint: React.FC = () => {
               <p className="mint-description">Enter the amount of NFTs you would like to buy</p>
               <div className="counter-section">
                 <button className="counter-button" onClick={handleDecrement}>-</button>
-                <input type="text" className="counter-input" value={count} readOnly />
+                <input type="text" className="counter-input" value={count}  />
                 <button className="counter-button" onClick={handleIncrement}>+</button>
               </div>
               <p className="minted-status">100/500 Minted</p>
