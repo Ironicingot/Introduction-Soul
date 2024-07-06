@@ -205,7 +205,6 @@ body {
   font-weight: 1000;
 }
 
-/* Rotating Text Animation */
 .rotating-text {
   height: 1.4em;
   font-size: 3.5em;
@@ -219,7 +218,7 @@ body {
 
 .rotating-text__container {
   display: inline-block;
-  animation: anim 6s linear infinite;
+  animation: scroll 8s linear infinite;
 }
 
 .rotating-text__container__list {
@@ -234,20 +233,11 @@ body {
   align-items: center;
 }
 
-@keyframes anim {
-  0%, 20% {
+@keyframes scroll {
+  0% {
     transform: translateY(0);
-  }
-  25%, 45% {
-    transform: translateY(-1.4em);
-  }
-  50%, 70% {
-    transform: translateY(-2.8em);
-  }
-  75%, 95% {
-    transform: translateY(-4.2em);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(-75%); /* Adjust to match the number of items */
   }
 }

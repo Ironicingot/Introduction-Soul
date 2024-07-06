@@ -3,7 +3,7 @@ import './Mint.css';
 import mascot from './assets/nftmascot.png'; // Adjust the path if necessary
 import backdrop from './assets/Backdrop.png'; // Adjust the path if necessary
 
-const words = ["Bootstrap", "Secure", "Redistribute"];
+const words = ["Bootstrap", "Secure", "Redistribute","Bootstrap"];
 
 const Mint: React.FC = () => {
   const [count, setCount] = useState(1);
