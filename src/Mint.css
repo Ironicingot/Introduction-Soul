@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noticia+Text:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:600');
 
 body {
   background-color: #0d1b25;
@@ -13,7 +14,7 @@ body {
 }
 
 .left-side, .right-side {
-  margin: 0 50px; /* Add margin to create space from the ends */
+  margin: 0 80px; /* Add margin to create space from the ends */
 }
 
 .left-side {
@@ -24,7 +25,8 @@ body {
   font-family: 'Noticia Text';
   color: #68e494;
   font-size: 8rem;
-  line-height: 0;
+  line-height: 1;
+  margin-top: 1px;
 }
 
 .rev-nfts {
@@ -33,6 +35,7 @@ body {
   font-size: 6rem;
   line-height: 0;
   background: linear-gradient(to right, #f638ea, #3eb356);
+  margin-top: px;
 }
 
 .description {
@@ -63,29 +66,29 @@ body {
 }
 
 .mint-section {
+  position: relative;
   background-color: #0b101b;
   border-radius: 15px;
-  border: 2px solid;
-  border-image: linear-gradient(to right, #f638ea, #3eb356) .5;
+  border: 5px solid;
+  border-image: linear-gradient(to right, #f638ea, #3eb356) 1;
   padding: 20px;
   margin-top: 20px;
-  position: relative;
   display: flex; /* Use flexbox for layout */
   align-items: center; /* Center items vertically */
   justify-content: center; /* Center items horizontally */
+  overflow: hidden; /* Clip the child elements that go beyond this container */
 }
 
 .backdrop {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 1;
-    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 1;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%);
 }
-  
 
 .mascot {
   max-width: 200px; /* Ensure the image does not exceed this width */
@@ -112,7 +115,7 @@ body {
   color: #b3eaaf;
   font-size: 3rem;
   margin-top: 0; /* Remove top margin */
-  margin-bottom:0;
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -134,18 +137,23 @@ body {
 .counter-button {
   font-family: 'Consolas', monospace;
   color: #b3eaaf;
-  background: none;
-  border: 2px solid #b3eaaf;
-  border-radius: 10px;
-  padding: 10px;
+  background: #0d1b25;
+  border-radius: 0; /* Remove rounded corners */
   cursor: pointer;
+  font-size: 1.5rem; /* Increased font size */
 }
 
-.counter {
+.counter-input {
   font-family: 'Consolas', monospace;
   color: #b3eaaf;
-  font-size: 1.5em;
-  margin: 0 20px;
+  background: none;
+  border-top: 5px solid #0d1b25;
+  border-bottom: 5px solid #0d1b25;
+  border-left: none;
+  border-right: none;
+  width: 230px;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .minted-status {
@@ -188,4 +196,51 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-weight: 1000;
+}
+
+/* Rotating Text Animation */
+.rotating-text {
+  height: 1.4em;
+  font-size: 3.5em;
+  font-weight: 600;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.rotating-text__container {
+  display: inline-block;
+  animation: anim 6s linear infinite;
+}
+
+.rotating-text__container__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rotating-text__container__list__item {
+  height: 1.4em;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes anim {
+  0%, 20% {
+    transform: translateY(0);
+  }
+  25%, 45% {
+    transform: translateY(-1.4em);
+  }
+  50%, 70% {
+    transform: translateY(-2.8em);
+  }
+  75%, 95% {
+    transform: translateY(-4.2em);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

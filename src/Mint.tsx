@@ -1,16 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Mint.css';
 import mascot from './assets/nftmascot.png'; // Adjust the path if necessary
-import backdrop from './assets/Backdrop.png'; // Import the backdrop image
+import backdrop from './assets/Backdrop.png'; // Adjust the path if necessary
+
+const words = ["Bootstrap", "Secure", "Redistribute"];
 
 const Mint: React.FC = () => {
+  const [count, setCount] = useState(1);
+
+  const handleIncrement = () => {
+    setCount(count + 1);
+  };
+
+  const handleDecrement = () => {
+    if (count > 1) {
+      setCount(count - 1);
+    }
+  };
+
   return (
     <div className="container">
       <div className="left-side">
+        <div className="rotating-text">
+          <div className="rotating-text__container">
+            <ul className="rotating-text__container__list">
+              {words.map((word, index) => (
+                <li key={index} className="rotating-text__container__list__item">
+                  {word}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
         <p className="soulana">SOULANA</p>
         <p className="rev-nfts">REV-NFTS</p>
         <p className="description">
-          Participate in the initial bootstrap of the SOUL/SOL liquidity. <div>Mint your NFTs and gain equity in all revenue streams</div> earned within the protocol. Limited to 500 Pieces
+          Participate in the initial Bootstrap of the SOUL/SOL liquidity. Mint your NFTs and gain equity in all revenue streams earned within the protocol. Limited to 500 Pieces
         </p>
         <div className="buttons">
           <button className="docs">Docs</button>
@@ -25,12 +50,10 @@ const Mint: React.FC = () => {
             <div className="mint-box">
               <h2 className="mint-title">MINT</h2>
               <p className="mint-description">Enter the amount of NFTs you would like to buy</p>
-            </div>
-            <div className="counter-box">
               <div className="counter-section">
-                <button className="counter-button">-</button>
-                <span className="counter">1</span>
-                <button className="counter-button">+</button>
+                <button className="counter-button" onClick={handleDecrement}>-</button>
+                <input type="text" className="counter-input" value={count} readOnly />
+                <button className="counter-button" onClick={handleIncrement}>+</button>
               </div>
               <p className="minted-status">100/500 Minted</p>
             </div>
